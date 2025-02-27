@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Finance Tracker</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'finance/css/styles.css' %}">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Welcome, {{ user.username }}!</h1>
+        <p>This is your finance tracker dashboard.</p>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+</body>
+</html>

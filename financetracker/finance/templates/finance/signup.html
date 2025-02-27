@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up - Finance Tracker</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'finance/css/styles.css' %}">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="login-link">
+            <p>Already have an account? <a href="#">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>
